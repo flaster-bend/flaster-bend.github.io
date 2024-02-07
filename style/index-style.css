@@ -1,61 +1,89 @@
-html {
-    background-color: black;
-    color-scheme dark;
-    color: antiquewhite;
-    font-family: 'Ubuntu', sans-serif;
+* {
+    /* border: 2px dotted white; */
+    scrollbar-width: none;
 }
 
 body {
-    margin: 0 auto;
-    font-family: 'Ubuntu' sans-serif;
-    background-color: rgb(0, 0, 0);
-
-}
-
-h1 {
-    margin: 2rem;
-    padding: 10px 0;
     background-color: black;
-    color: whitesmoke;
-    text-align: center;
-    font-size: 90px;
-    letter-spacing: 30px;
-    border: 2px transparent;
-
-}
-
-
-#logo {
-    max-width: 50%;
-    height: auto;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.navbar {
-    width: 100%;
-    overflow: hidden;
-    position: fixed;
-    background-color: inherit;
-    top: 0;
-    display: flex;
-    justify-content: space-evenly;
-    border-bottom: solid 3px white;
-
-}
-
-.navbar a {
+    margin: 0;
+    padding: 0;
     color: white;
-    display: block;
-    float: left;
-    display: block;
-    padding: 14px;
-    letter-spacing: 1vmax;
-    font-size: smaller;
+
+
 }
 
-.navbar a:hover {
-    color: black;
+header {
+    padding: 0;
+    text-align: center;
+    border-bottom: 2px inset white;
+    box-shadow: 2px white;
+}
+
+.index {
+    background-image: url("../media/cycle/cycle13.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 900px;
+    background-blend-mode: color-burn;
+    height: 450px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0,0.9);
+    padding: 10px 0 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+
+}
+
+nav a {
+    font-size: x-small;
+    color: white;
+    letter-spacing: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+nav a:not(.logo a):hover {
     background-color: white;
-    text-shadow: 0.5px 0.5px 4px rgba(255, 0, 0, 0.7)
+    color: black;
+}
+
+.logo {
+    height: 10px;
+}
+
+.logo a {
+    background-image: url("../media/logo_transparent.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    position: relative;
+    text-indent: -9999px;
+    height: 50px;
+    width: 150px;
+    top: -20px;
+}
+
+.socialmedia a {
+    color: white;
 }
